@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamarinFlixSegundoDS.App">
+    
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#2f2f30" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="white" />
+                <Setter Property="CornerRadius" Value="8" />
+                <Setter Property="BorderColor" Value="#e80000" />
+                <Setter Property="BorderWidth" Value="1" />
+            </Style>
+
+            <Style TargetType="Image" x:Key="logoNaListaDeCategorias">
+                <Setter Property="HeightRequest" Value="85" />
+            </Style>
+            
+        </ResourceDictionary>
+
+    </Application.Resources>
+    
+</Application>
