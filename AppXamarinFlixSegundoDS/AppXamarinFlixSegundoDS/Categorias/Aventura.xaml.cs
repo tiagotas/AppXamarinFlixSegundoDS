@@ -19,6 +19,11 @@ namespace AppXamarinFlixSegundoDS.Categorias
             logo.Source = ImageSource.FromResource("AppXamarinFlixSegundoDS.Img.xamarin.png");
 
             btnCapitaMarvel.Source = ImageSource.FromResource("AppXamarinFlixSegundoDS.Posters.capitamarvel.jpg");
+            btnAlladin.Source = ImageSource.FromResource("AppXamarinFlixSegundoDS.Posters.alladin.jpg");
+            btnDumbo.Source = ImageSource.FromResource("AppXamarinFlixSegundoDS.Posters.dumbo.jpg");
+            btnPanteraNegra.Source = ImageSource.FromResource("AppXamarinFlixSegundoDS.Posters.panteranegra.jpg");
+            btnShazan.Source = ImageSource.FromResource("AppXamarinFlixSegundoDS.Posters.shazam.jpg");
+            btnVef.Source = ImageSource.FromResource("AppXamarinFlixSegundoDS.Posters.vef.jpg");
         }
 
         private void btnCapitaMarvel_Clicked(object sender, EventArgs e)

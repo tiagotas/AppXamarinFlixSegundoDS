@@ -23,7 +23,31 @@
             <Style TargetType="Image" x:Key="logoNaListaDeCategorias">
                 <Setter Property="HeightRequest" Value="85" />
             </Style>
+
+            <Style TargetType="ImageButton">
+                <Setter Property="Aspect" Value="AspectFill" />
+            </Style>
+
+            <Style x:Key="Titulo" TargetType="Label">
+                <Setter Property="TextTransform" Value="Uppercase" />
+                <Setter Property="TextColor" Value="#e80000" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+               <!-- <Setter Property="FontSize" Value="Medium" /> -->
+                <Setter Property="Padding" Value="0,20,0,0" />
+            </Style>
+
+            <Style x:Key="TextoBranco" TargetType="Label">
+                <Setter Property="TextColor" Value="#FFFFFF" />
+            </Style>
+
+            <Style x:Key="TextoBrancoCentralizado" TargetType="Label" BaseResourceKey="TextoBranco">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
             
+
+
+
         </ResourceDictionary>
 
     </Application.Resources>

@@ -6,11 +6,57 @@
              Title="Assistir Capitã Marvel">
     
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <WebView Grid.Column="0" Grid.Row="0" x:Name="video" />
+
+            <StackLayout Grid.Column="0" Grid.Row="1">
+                <ScrollView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Image HeightRequest="300" x:Name="poster" Grid.Row="0" Grid.Column="0" BackgroundColor="AliceBlue" />
+
+                        <StackLayout Grid.Column="1" Grid.Row="0" VerticalOptions="CenterAndExpand">
+                            
+                           <!-- <Label Text="Título" Style="{StaticResource Titulo}" /> -->
+                            <Label Text="Capitã Mavel" Style="{StaticResource Titulo}" FontSize="Large" />
+
+                            <Label Text="Data de Lançamento" Style="{StaticResource Titulo}" />
+                            <Label Text="7 de Março de 2019" Style="{StaticResource TextoBrancoCentralizado}" />
+
+                            <Label Text="Direção" Style="{StaticResource Titulo}" />
+                            <Label Text="Anna Boden, Ryan Fleck" Style="{StaticResource TextoBrancoCentralizado}" />
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Padding="10">
+                            <Label Text="Sinopse" Style="{StaticResource Titulo}" />
+
+                            <Label x:Name="lbl_sinopse" Style="{StaticResource TextoBranco}" />
+                        </StackLayout>
+
+
+
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+        </Grid>   
+
     </ContentPage.Content>
     
 </ContentPage>
